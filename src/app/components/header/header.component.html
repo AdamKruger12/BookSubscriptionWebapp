@@ -1,0 +1,28 @@
+<div class="header">
+  <div class="search-bar">
+    <input
+      #searchInput
+      type="text"
+      placeholder="Search books by title..."
+      (input)="onSearch(searchInput.value)"
+    />
+  </div>
+
+  <div class="filter">
+    <button mat-button (click)="toggleFilters()">Filters</button>
+    <div class="filters" *ngIf="showFilters">
+      <mat-checkbox
+        *ngFor="let genre of genres"
+        [(ngModel)]="genre.selected"
+        (change)="onFilterChange()"
+        >{{ genre.name }}</mat-checkbox
+      >
+    </div>
+  </div>
+
+  <div class="user-options">
+    <button mat-button (click)="navigateToLogin()">Log In</button>
+    <button mat-button (click)="navigateToSignup()">Sign Up</button>
+  </div>
+</div>
+<router-outlet></router-outlet>

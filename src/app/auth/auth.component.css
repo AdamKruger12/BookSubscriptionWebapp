@@ -1,0 +1,43 @@
+:host {
+  display: block;
+  height: 100vh;
+  background: url("../../assets/images/BookSubscriptionBackdrop.png") no-repeat
+    center center fixed;
+  background-size: cover;
+}
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+}
+
+.auth-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 16px;
+  padding: 10px;
+}

@@ -1,0 +1,61 @@
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Search bar */
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+}
+
+/* Filter button and dropdown */
+.filter {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.filter button {
+  padding: 8px;
+}
+
+/* User options buttons */
+.user-options {
+  display: flex;
+  align-items: center;
+}
+
+.user-options button {
+  margin-left: 10px;
+}
+
+/* Book grid styles */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.book-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 10px;
+}
